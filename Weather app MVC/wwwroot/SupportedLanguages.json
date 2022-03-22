@@ -1,0 +1,198 @@
+﻿[
+  {
+    "ID": "af",
+    "Name": " Afrikaans"
+  },
+  {
+    "ID": "al",
+    "Name": " Albanian"
+  },
+  {
+    "ID": "ar",
+    "Name": " Arabic"
+  },
+  {
+    "ID": "az",
+    "Name": " Azerbaijani"
+  },
+  {
+    "ID": "bg",
+    "Name": " Bulgarian"
+  },
+  {
+    "ID": "ca",
+    "Name": " Catalan"
+  },
+  {
+    "ID": "cz",
+    "Name": " Czech"
+  },
+  {
+    "ID": "da",
+    "Name": " Danish"
+  },
+  {
+    "ID": "de",
+    "Name": " German"
+  },
+  {
+    "ID": "el",
+    "Name": " Greek"
+  },
+  {
+    "ID": "en",
+    "Name": " English"
+  },
+  {
+    "ID": "eu",
+    "Name": " Basque"
+  },
+  {
+    "ID": "fa",
+    "Name": " Persian (Farsi)"
+  },
+  {
+    "ID": "fi",
+    "Name": " Finnish"
+  },
+  {
+    "ID": "fr",
+    "Name": " French"
+  },
+  {
+    "ID": "gl",
+    "Name": " Galician"
+  },
+  {
+    "ID": "he",
+    "Name": " Hebrew"
+  },
+  {
+    "ID": "hi",
+    "Name": " Hindi"
+  },
+  {
+    "ID": "hr",
+    "Name": " Croatian"
+  },
+  {
+    "ID": "hu",
+    "Name": " Hungarian"
+  },
+  {
+    "ID": "id",
+    "Name": " Indonesian"
+  },
+  {
+    "ID": "it",
+    "Name": " Italian"
+  },
+  {
+    "ID": "ja",
+    "Name": " Japanese"
+  },
+  {
+    "ID": "kr",
+    "Name": " Korean"
+  },
+  {
+    "ID": "la",
+    "Name": " Latvian"
+  },
+  {
+    "ID": "lt",
+    "Name": " Lithuanian"
+  },
+  {
+    "ID": "mk",
+    "Name": " Macedonian"
+  },
+  {
+    "ID": "no",
+    "Name": " Norwegian"
+  },
+  {
+    "ID": "nl",
+    "Name": " Dutch"
+  },
+  {
+    "ID": "pl",
+    "Name": " Polish"
+  },
+  {
+    "ID": "pt",
+    "Name": " Portuguese"
+  },
+  {
+    "ID": "pt_br",
+    "Name": " Português Brasil"
+  },
+  {
+    "ID": "ro",
+    "Name": " Romanian"
+  },
+  {
+    "ID": "ru",
+    "Name": " Russian"
+  },
+  {
+    "ID": "se",
+    "Name": " Swedish"
+  },
+  {
+    "ID": "sv",
+    "Name": " Swedish"
+  },
+  {
+    "ID": "sk",
+    "Name": " Slovak"
+  },
+  {
+    "ID": "sl",
+    "Name": " Slovenian"
+  },
+  {
+    "ID": "es",
+    "Name": " Spanish"
+  },
+  {
+    "ID": "sp",
+    "Name": " Spanish"
+  },
+  {
+    "ID": "sr",
+    "Name": " Serbian"
+  },
+  {
+    "ID": "th",
+    "Name": " Thai"
+  },
+  {
+    "ID": "tr",
+    "Name": " Turkish"
+  },
+  {
+    "ID": "uk",
+    "Name": " Ukrainian"
+  },
+  {
+    "ID": "ua",
+    "Name": " Ukrainian"
+  },
+  {
+    "ID": "vi",
+    "Name": " Vietnamese"
+  },
+  {
+    "ID": "zh_cn",
+    "Name": " Chinese (Simplified)"
+  },
+  {
+    "ID": "zh_tw",
+    "Name": " Chinese (Traditional)"
+  },
+  {
+    "ID": "zu",
+    "Name": " Zulu"
+  }
+]

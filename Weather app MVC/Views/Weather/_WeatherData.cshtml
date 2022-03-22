@@ -1,0 +1,80 @@
+﻿@model Weather_app_MVC.ViewModels.WeatherDataViewModel
+
+@{
+    string description =$"Feels like {Model.CurrentWeather.Main.FeelsLike}{Model.Unit.TemperatureSymbol}. {Model.CurrentWeather.Weather[0].Main}. {Model.CurrentWeather.Weather[0].Description}";
+    string iconSource = $"http://openweathermap.org/img/wn/{Model.CurrentWeather.Weather[0].Icon}.png";
+}
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <h3>@Model.CurrentWeather.Name, @Model.CurrentWeather.Sys.Country</h3>
+        </div>
+        <div class="row">
+            <p>Lat: @Model.CurrentWeather.Coord.Latitude°, Lon: @Model.CurrentWeather.Coord.Longitude°</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <img src=@iconSource />
+            </div>
+            <div class="col">
+                <h3>@Model.CurrentWeather.Main.Temp @Model.Unit.TemperatureSymbol</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <h5>Sunrise:</h5>
+            </div>
+            <div class="col">
+                <h5>@Model.CurrentWeather.Sys.GetSunRise()</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5>Sunset:</h5>
+            </div>
+            <div class="col">
+                <h5>@Model.CurrentWeather.Sys.GetSunSet()</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <h5>@description</h5>
+    <div class="row">
+        <div class="col">
+            <p>Humidity:</p>
+        </div>
+        <div class="col">
+            <p>@Model.CurrentWeather.Main.Humidity<span>%</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Pressure:</p>
+        </div>
+        <div class="col">
+            <p>@Model.CurrentWeather.Main.Pressure<span>hPa</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Visibility:</p>
+        </div>
+        <div class="col">
+            <p>@Model.CurrentWeather.Visibility<span>m</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Wind speed:</p>
+        </div>
+        <div class="col">
+            <p>@Model.CurrentWeather.Wind.Speed<span>@Model.Unit.VelocitySymbol</span></p>
+        </div>
+    </div>
+</div>

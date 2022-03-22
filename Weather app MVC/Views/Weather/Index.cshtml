@@ -1,0 +1,46 @@
+﻿@model Weather_app_MVC.ViewModels.WeatherSearchDataViewModel;
+@{
+
+
+}
+
+
+<div class="form">
+    <div class="row">
+        <div class="col">
+            <label for="CitySearch" class="form-label">City</label>
+            <input id="CitySearch" class="form-control" list="CityList" autocomplete="off" placeholder="Type to search..." onkeyup="SearchCities(this.value)" onchange="SaveCityData(this.value)"/>
+            <input hidden id="City" name="city" data-lon=0 data-lat=0 required/>
+        </div>
+        <div class="col">
+            <label for="Unit" class="form-label">Unit</label>
+            <select id="Unit" name="unit" class="form-control" required>
+                @foreach (Unit unit in Model.Units)
+                {
+                    <!option value=@unit.Name @(Model.selectedUnit == unit.Name ? "selected" : String.Empty)>@unit.Name (@unit.TemperatureSymbol, @unit.VelocitySymbol)</!option>
+                }
+            </select>
+        </div>
+        <div class="col">
+            <label for="Language" class="form-label">Language</label>
+            <select id="Language" name ="lang" class="form-select" required>
+                @foreach (Language language in Model.Languages)
+                {
+                    <!option value=@language.Id @(Model.selectedLanguage == language.Id ? "selected" : String.Empty)>@language.Name</!option>
+                }
+            </select>
+        </div>
+        <div class="col">
+            <label for="APIkey" class="form-label">API key</label>
+            <input id="APIkey" name ="apikey" class="form-control" value=@Model.apiKey required/>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-success" onclick=GetWeather()>Submit</button>
+        </div>
+    </div>
+    <div class="row">
+        <div id="WeatherData"></div>
+    </div>
+</div>
+<datalist id="CityList"></datalist>
+

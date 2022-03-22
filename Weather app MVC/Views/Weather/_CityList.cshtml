@@ -1,0 +1,6 @@
+﻿@model List<Weather_app_MVC.Models.City>
+
+@foreach(City city in Model)
+{    
+    <option data-value=@city.Id data-lat=@city.Coord.Latitude data-lon=@city.Coord.Longitude label=@city.Country>@city.Name</option>
+}
